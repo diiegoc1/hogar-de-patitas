@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'fuente';
+    src: url('fonts/HelveticaNowMicro-Medium.otf');
+}
+
+@font-face {
+    font-family: "mi-fuente";
+    src: url(fonts/HelveticaNeue-Thin.otf);
+}
+
+@font-face {
+    font-family: "condensed";
+    src: url(fonts/HelveticaNeue-MediumCond.otf);
+}
+
+@font-face {
+    font-family: "perso";
+    src: url(fonts/GT-Maru-Bold-Trial.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #EDC97F;
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    font-family: "mi-fuente";
+    letter-spacing: 1.5px;
+}
+
+.header .logo img {
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo {
+    cursor: pointer;
+    padding: 10px 10%;
+
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+.navbar .nav-link {
+    color: #444;
+}
+
+#navbar {
+    padding-right: 7rem;
+}
+
+#home {
+    color: #444;
+}
+
+#home:hover {
+    color: #BF6211;
+}
+
+#contacto:hover {
+    color: #BF6211;
+}
+
+#ver-mas:hover {
+    color: #BF6211;
+}
+
+section {
+    font-family: 'fuente';
+}
+
+#banner {
+    background-image: url(src/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.section h1 {
+    padding-top: 7%;
+}
+
+.section h3 {
+    padding-top: 25%;
+    font-family: "mi-fuente";
+    color: #202323;
+}
+
+.contenedor {
+    background-color: #FDA757;
+    margin: auto;
+    width: 800px;
+    height: 55px;
+    border-radius: 50px;
+    transform: translateY(300px);
+}
+
+.contenedor h3 {
+    transform: translateY(-189px);
+}
+
+
+.card-title {
+    color: #2F3333;
+    font-family: "condensed";
+}
+
+
+#mascotas {
+    background-color: #444444;
+}
+
+#mascotas p {
+    font-family: "condensed";
+}
+
+.parrafo {
+    color: #eee;
+    font-family: "mi-fuente";
+}
+
+
+
+#parrafo2 {
+    font-family: "mi-fuente";
+}
+
+#text-light {
+    font-family: "perso";
+    letter-spacing: 1px;
+    color: #F4F77C;
+}
+
+
+.contenido {
+    background-color: #EDC97F;
+    width: 1000px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    position: relative;
+}
+
+.card-title {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.texto {
+    text-shadow: 2px 2px 5px #202323
+}
+
+.boton .btn-default {
+    background-color: #35403A;
+    color: #eee;
+    border: 0;
+    border-radius: 2em;
+    padding: 0.7em 2em;
+    cursor: pointer;
+}
+
+.boton a:hover {
+    background-color: #eee;
+    color: #35403A;
+}
+
+.title {
+    font-family: "condensed";
+    color: #2F3333;
+}
+
+
+
+.section-mascotas {
+    background-color: #4C594F;
+}
+
+.intro {
+    color: #eee;
+    font-family: "condensed";
+    font-size: 20px;
+}
+
+.intro-second {
+    color: #eee;
+    font-family: "mi-fuente";
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.intro-three {
+    color: #eee;
+    font-family: "mi-fuente";
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+#hr {
+    height: 1px;
+    background-color: #444;
+    border: none;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+#hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+#proceso {
+    /*  background-image: url(src/fondo-bloque-04.jpg); */
+    background-color: #EDC97F;
+}
+
+
+
+.card-titulo {
+    font-family: "fuente";
+}
+
+
+.accordion-button .collapsed{
+    background-color: transparent;
+}
+
+.background-footer{
+    background-color: #232625;
+    height: 15rem;
+    padding: 1rem;
+}
+
+.background-footer a {
+    text-decoration: none;
+    margin: 0 1rem 1rem;
+    padding: 2px;
+    color: #eee;
+}
+.row-footer{
+    margin-top: 3rem;
+}
+
+.container-footer{
+    overflow: auto;
+}
+.sub-footer{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.sub-footer span{
+    color: #eee;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+#btnUp {
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    width: 50px;
+    height: 50px;
+    z-index: 100; 
+    border: none; 
+    outline: none; 
+    background-color: #F4F77C; 
+    color: #444; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    font-size: 30px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
